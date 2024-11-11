@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from keras.models import load_model
+import keras
 from data_preprocessing import load_and_preprocess_data
 
 # Load the trained model and data
-model = load_model('fashion_mnist_model.h5')
+model = keras.models.load_model('fashion_mnist_model.h5')
 _, _, X_test, y_test = load_and_preprocess_data()
 
 # Define class labels for Fashion MNIST dataset

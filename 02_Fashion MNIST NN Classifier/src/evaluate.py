@@ -1,4 +1,4 @@
-from keras import load_model
+import keras
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import seaborn as sns
@@ -8,7 +8,7 @@ class_labels = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
                 "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"]
 
 def evaluate_model(X_test, y_test):
-    model = load_model('fashion_mnist_model.h5')
+    model = keras.models.load_model('fashion_mnist_model.h5')
     y_predicted = model.predict(X_test)
     y_predicted_labels = [np.argmax(i) for i in y_predicted]
     
