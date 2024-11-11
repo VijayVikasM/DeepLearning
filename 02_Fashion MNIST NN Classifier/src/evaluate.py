@@ -1,4 +1,4 @@
-from keras.models import load_model
+from keras import load_model
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import seaborn as sns

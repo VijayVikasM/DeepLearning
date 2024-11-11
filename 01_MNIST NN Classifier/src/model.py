@@ -1,4 +1,5 @@
-from tensorflow import keras
+import tensorflow as tf
+import keras
 
 def create_model():
     model = keras.Sequential([

@@ -1,11 +1,12 @@
-from tensorflow import keras
+import tensorflow as tf
+import keras
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 def evaluate_model(X_test, y_test):
-    model = keras.models.load_model('model.h5')
+    model = keras.models.load_model('model.keras')
     y_predicted = model.predict(X_test)
     y_predicted_labels = [np.argmax(i) for i in y_predicted]
     
