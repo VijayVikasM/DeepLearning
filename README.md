@@ -24,3 +24,26 @@ This project trains a neural network to recognize handwritten digits using the M
 
 ## Dependencies
 List of required packages in `requirements.txt`.
+
+# Fashion MNIST Classification Project
+
+This project uses a neural network to classify images of clothing from the Fashion MNIST dataset.
+
+## Project Structure
+- `src/`: Contains source code for data preprocessing, model creation, training, and evaluation.
+- `tests/`: Unit tests for model components.
+
+## Getting Started
+
+1. Install dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+2. Run the project:
+    ```
+    python src/train.py
+    ```
+
+## Dependencies
+List of required packages in `requirements.txt`.
